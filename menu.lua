@@ -1,3 +1,7 @@
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 local composer = require( "composer" ) --This is a composer file so need to require composer module
 local scene = composer.newScene()
 local infoButton
@@ -61,6 +65,10 @@ function scene:create(event)
        invadersText:Pushtext()
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 function scene:show(event)
 	local phase = event.phase
     	if (phase == "did") then
@@ -90,3 +98,7 @@ scene:addEventListener("create", scene)
 scene:addEventListener("show", scene)
 scene:addEventListener("hide", scene)
 return scene
+
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
