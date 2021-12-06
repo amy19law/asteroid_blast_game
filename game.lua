@@ -1,3 +1,7 @@
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 local composer = require( "composer" )
 local scene = composer.newScene()
 
@@ -88,6 +92,10 @@ local function shootLaser()
 	} )
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 -- Function to run spawnAsteroid & spawnPlanet functions & remove off screen asteriods in order to form game loop 
 local function gameLoop()
 	-- Create new asteroid
@@ -158,6 +166,10 @@ function drawLives()
 	life3.name = "life3"
     scene.view:insert(life3)
 end
+
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
 
 -- Function to Update Lives
 function updateLives()
@@ -327,6 +339,10 @@ local function collision(event)
 	end
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 -- Function to load up Menu 
 function backHome()
     composer.gotoScene("menu")
@@ -383,6 +399,9 @@ function scene:create(event)
 	laserButton:addEventListener("tap", shootLaser)
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
 
 -- Function which runs when the scene is fully on screen
 function scene:show(event)
@@ -438,3 +457,7 @@ scene:addEventListener("hide", scene)
 scene:addEventListener("destroy", scene)
 
 return scene
+
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
