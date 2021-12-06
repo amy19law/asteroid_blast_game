@@ -1,3 +1,7 @@
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 local composer = require( "composer" )
 local scene = composer.newScene()
 local backgroundEffects = require("backgroundeffects") -- A module that will generate Background Effects
@@ -100,6 +104,10 @@ function scene:create(event)
 
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 -- Function which runs when the scene is fully on screen
 function scene:show( event )
 	local phase = event.phase
@@ -125,3 +133,7 @@ scene:addEventListener("show", scene)
 scene:addEventListener("hide", scene)
 
 return scene
+
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
