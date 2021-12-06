@@ -1,3 +1,7 @@
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
+
 local composer = require( "composer" ) --This is a composer file so need to require composer module
 local scene = composer.newScene()
 local backgroundEffects = require("backgroundeffects") -- A module that will generate Background Effects
@@ -81,6 +85,9 @@ function scene:create(event)
 	group:insert(backButton)
 end
 
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
 
 function scene:show(event)
 	local phase = event.phase
@@ -105,3 +112,7 @@ scene:addEventListener("show", scene)
 scene:addEventListener("hide", scene)
 
 return scene
+
+-- ----------------------------------------------------------------------------------------
+-- Created by Amy Law
+-- ----------------------------------------------------------------------------------------
